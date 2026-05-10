@@ -1,4 +1,0 @@
-PyQt6==6.4.2
-requests==2.31.0
-mss==9.0.1
-keyboard==0.13.5
