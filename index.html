@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Copilot | Next-Gen Screen Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Outfit', sans-serif; background-color: #050505; color: #fff; overflow-x: hidden; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .gradient-text { background: linear-gradient(135deg, #fff 0%, #888 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .accent-gradient { background: linear-gradient(135deg, #0078D7 0%, #00C6FF 100%); }
+        .glow { box-shadow: 0 0 50px rgba(0, 120, 215, 0.2); }
+        .card-hover:hover { transform: translateY(-5px); border-color: rgba(0, 120, 215, 0.5); transition: all 0.3s ease; }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 py-6 px-10 flex justify-between items-center glass">
+        <div class="text-2xl font-bold tracking-tighter flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg accent-gradient flex items-center justify-center">
+                <i class="fas fa-robot text-white text-sm"></i>
+            </div>
+             Dragger AI
+        </div>
+        <div class="hidden md:flex gap-10 text-sm font-medium text-gray-400 uppercase tracking-widest">
+            <a href="#how-to" class="hover:text-white transition">How to Use</a>
+            <a href="#setup" class="hover:text-white transition">Setup</a>
+            <a href="#api" class="hover:text-white transition">Get API Key</a>
+            <a href="#shortcuts" class="hover:text-white transition">Shortcuts</a>
+        </div>
+        <a href="#" class="px-6 py-3 rounded-full accent-gradient text-sm font-bold glow">DOWNLOAD NOW</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-48 pb-32 px-10 flex flex-col items-center text-center">
+        <div class="mb-4 text-xs font-bold px-4 py-2 border border-blue-500/30 rounded-full text-blue-400 bg-blue-500/5 uppercase tracking-widest" data-aos="fade-up">
+            Powered by Gemini, GPT-4o & Claude 4.5
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold max-w-4xl gradient-text mb-6 leading-tight tracking-tight" data-aos="fade-up" data-aos-delay="100">
+            Same-Page Intelligence.<br>Zero Context Switching.
+        </h1>
+        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mb-8 leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+            Clarify doubts exactly where they arise. Dragger AI brings Google, OpenAI, and Anthropic directly to your workflow—no more switching screens.
+        </p>
+        <div class="flex gap-4" data-aos="fade-up" data-aos-delay="300">
+            <a href="#" class="px-10 py-5 rounded-2xl accent-gradient text-lg font-bold glow flex items-center gap-3 hover:scale-105 transition">
+                <i class="fab fa-windows"></i> Get it for Windows
+            </a>
+            <a href="#how-to" class="px-10 py-5 rounded-2xl glass text-lg font-bold hover:bg-white/5 transition">
+                Learn how it works
+            </a>
+        </div>
+    </section>
+
+    <!-- Requirements & Setup -->
+    <section id="setup" class="py-32 px-10 bg-black">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+            <div class="md:w-1/2" data-aos="fade-right">
+                <h2 class="text-4xl font-bold mb-6">System Requirements</h2>
+                <p class="text-gray-400 mb-8">Before running <b>Dragger AI</b>, ensure your system meets the following specifications for optimal performance.</p>
+                <div class="space-y-4">
+                    <div class="flex gap-4 items-center">
+                        <i class="fab fa-python text-yellow-500 text-xl"></i>
+                        <span class="text-gray-300">Python 3.10 or higher</span>
+                    </div>
+                    <div class="flex gap-4 items-center">
+                        <i class="fab fa-windows text-blue-500 text-xl"></i>
+                        <span class="text-gray-300">Windows 10 / 11 (64-bit)</span>
+                    </div>
+                    <div class="flex gap-4 items-center">
+                        <i class="fas fa-microchip text-purple-500 text-xl"></i>
+                        <span class="text-gray-300">Active Internet Connection for API calls</span>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 glass p-8 rounded-3xl" data-aos="fade-left">
+                <h3 class="text-xl font-bold mb-6">Installation Guide</h3>
+                <div class="space-y-6">
+                    <div>
+                        <p class="text-sm text-gray-500 mb-2 uppercase font-bold">Step 1: Install Dependencies</p>
+                        <div class="bg-black/50 p-4 rounded-xl border border-white/5 font-mono text-sm text-green-400">
+                            pip install -r requirements.txt
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500 mb-2 uppercase font-bold">Step 2: Run Dragger AI</p>
+                        <div class="bg-black/50 p-4 rounded-xl border border-white/5 font-mono text-sm text-blue-400">
+                            python main.py
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600">Tip: If you're using the standalone version, simply double-click <b>DraggerAI.exe</b>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="how-to" class="py-32 px-10 bg-white/2">
+        <div class="text-center mb-20">
+            <h2 class="text-4xl font-bold mb-4" data-aos="fade-right">How to Use Dragger AI</h2>
+            <p class="text-gray-500" data-aos="fade-left">Master the experience in three simple steps.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+            <div class="glass p-10 rounded-3xl card-hover" data-aos="zoom-in">
+                <div class="text-4xl mb-6 text-blue-500"><i class="fas fa-keyboard"></i></div>
+                <h3 class="text-xl font-bold mb-4 uppercase tracking-tighter">1. Trigger</h3>
+                <p class="text-gray-400 leading-relaxed">Press <code class="bg-white/10 px-2 py-1 rounded">CTRL + SHIFT + A</code> to start. The screen will dim, and your mouse becomes a selection tool.</p>
+            </div>
+            <div class="glass p-10 rounded-3xl card-hover" data-aos="zoom-in" data-aos-delay="100">
+                <div class="text-4xl mb-6 text-orange-500"><i class="fas fa-mouse-pointer"></i></div>
+                <h3 class="text-xl font-bold mb-4 uppercase tracking-tighter">2. Capture</h3>
+                <p class="text-gray-400 leading-relaxed">Drag your mouse to select exactly what you want the AI to see. Release to finish the capture.</p>
+            </div>
+            <div class="glass p-10 rounded-3xl card-hover" data-aos="zoom-in" data-aos-delay="200">
+                <div class="text-4xl mb-6 text-purple-500"><i class="fas fa-comment-dots"></i></div>
+                <h3 class="text-xl font-bold mb-4 uppercase tracking-tighter">3. Analyze</h3>
+                <p class="text-gray-400 leading-relaxed">Type your question or request in the popup box. High-speed AI will provide the answer in seconds.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Key Guide -->
+    <section id="api" class="py-32 px-10">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-20 items-center">
+            <div class="md:w-1/2">
+                <h2 class="text-5xl font-bold mb-10 leading-tight" data-aos="fade-right">Getting your API Keys</h2>
+                <p class="text-gray-400 mb-8" data-aos="fade-up">To use Dragger AI, you'll need an API key from your preferred provider. Most providers offer a free tier to get started.</p>
+                <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center gap-6 p-4 glass rounded-2xl hover:bg-white/5 transition group cursor-pointer" onclick="window.open('https://aistudio.google.com/app/apikey')">
+                        <div class="w-12 h-12 rounded-xl bg-blue-600/20 flex items-center justify-center text-blue-500 group-hover:scale-110 transition"><i class="fab fa-google"></i></div>
+                        <div>
+                            <h4 class="font-bold">Google Gemini</h4>
+                            <p class="text-xs text-gray-500 capitalize">Fast & High quota free tier @ AI Studio</p>
+                        </div>
+                        <i class="fas fa-external-link-alt ml-auto text-gray-600"></i>
+                    </div>
+                    <div class="flex items-center gap-6 p-4 glass rounded-2xl hover:bg-white/5 transition group cursor-pointer" onclick="window.open('https://platform.openai.com/api-keys')">
+                        <div class="w-12 h-12 rounded-xl bg-green-600/20 flex items-center justify-center text-green-500 group-hover:scale-110 transition"><i class="fas fa-circle-notch"></i></div>
+                        <div>
+                            <h4 class="font-bold">OpenAI GPT</h4>
+                            <p class="text-xs text-gray-500 capitalize">Elite intelligence @ OpenAI Platform</p>
+                        </div>
+                        <i class="fas fa-external-link-alt ml-auto text-gray-600"></i>
+                    </div>
+                    <div class="flex items-center gap-6 p-4 glass rounded-2xl hover:bg-white/5 transition group cursor-pointer" onclick="window.open('https://console.anthropic.com/settings/keys')">
+                        <div class="w-12 h-12 rounded-xl bg-orange-600/20 flex items-center justify-center text-orange-500 group-hover:scale-110 transition"><i class="fas fa-leaf"></i></div>
+                        <div>
+                            <h4 class="font-bold">Anthropic Claude</h4>
+                            <p class="text-xs text-gray-500 capitalize">Nuanced reasoning @ Claude Console</p>
+                        </div>
+                        <i class="fas fa-external-link-alt ml-auto text-gray-600"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 relative" data-aos="fade-left">
+                <div class="absolute inset-0 accent-gradient opacity-10 blur-3xl rounded-full"></div>
+                <div class="glass p-8 rounded-[40px] relative">
+                    <h4 class="text-sm border-b border-white/10 pb-4 mb-4 text-gray-500 uppercase tracking-widest font-bold">Config Walkthrough</h4>
+                    <ul class="space-y-6 text-gray-300">
+                        <li class="flex gap-4">
+                            <span class="w-6 h-6 rounded-full accent-gradient text-[10px] flex items-center justify-center flex-shrink-0">1</span>
+                            <span>Visit the provider console using the links provided.</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="w-6 h-6 rounded-full accent-gradient text-[10px] flex items-center justify-center flex-shrink-0">2</span>
+                            <span>Click <b>"Create New Key"</b> and copy it to your clipboard.</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="w-6 h-6 rounded-full accent-gradient text-[10px] flex items-center justify-center flex-shrink-0">3</span>
+                            <span>In Dragger AI, open the Control Panel, paste the key, and click <b>Save</b>.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shortcut Customization -->
+    <section id="shortcuts" class="py-32 px-10 text-center relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-blue-500/5 blur-[120px] rounded-full"></div>
+        <h2 class="text-4xl font-bold mb-6" data-aos="fade-up">Master Your Trigger</h2>
+        <p class="text-gray-400 mb-16 max-w-xl mx-auto" data-aos="fade-up" data-aos-delay="100">Dragger AI is built for speed. You can customize your global hotkey inside the Control Panel to match your workflow.</p>
+        
+        <div class="inline-flex glass p-4 rounded-3xl items-center gap-10" data-aos="zoom-out">
+            <div class="flex flex-col items-center">
+                <div class="w-16 h-16 rounded-2xl glass mb-2 flex items-center justify-center text-xl font-bold">CTRL</div>
+                <p class="text-[10px] uppercase text-gray-600 font-bold">Option</p>
+            </div>
+            <div class="text-2xl text-gray-600">+</div>
+            <div class="flex flex-col items-center">
+                <div class="w-16 h-16 rounded-2xl glass mb-2 flex items-center justify-center text-xl font-bold">SHIFT</div>
+                <p class="text-[10px] uppercase text-gray-600 font-bold">Alt</p>
+            </div>
+            <div class="text-2xl text-gray-600">+</div>
+            <div class="flex flex-col items-center">
+                <div class="w-16 h-16 rounded-2xl accent-gradient mb-2 flex items-center justify-center text-xl font-bold">A</div>
+                <p class="text-[10px] uppercase text-gray-600 font-bold">Any Key</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 px-10 border-t border-white/5 text-center">
+        <div class="flex gap-6 justify-center mb-10 text-2xl">
+            <a href="https://www.youtube.com/@GenesisDigitalSolutions" class="text-gray-600 hover:text-red-500 transition"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/genesis.digitals/" class="text-gray-600 hover:text-pink-500 transition"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/Genesis-Digital-Lab" class="text-gray-600 hover:text-white transition"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="text-gray-500 text-sm mb-2">&copy; 2026 Genesis Digital Solutions. All Rights Reserved.</p>
+        <p class="text-gray-700 text-xs uppercase tracking-widest font-bold">Built for performance. Built for you.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out-quad'
+        });
+    </script>
+</body>
+</html>
